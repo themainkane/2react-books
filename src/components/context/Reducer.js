@@ -1,3 +1,3 @@
-export default function Reducer(state, action) {
+export default function reducer(state, action) {
   return action;
 }
