@@ -1,13 +1,15 @@
 import "./booklist.scss";
 import { useEffect, useState, useContext } from "react";
 import CurrencyContext from "./context/CurrencyContext";
+import Context from "./context/Context";
 
-export default function BookList({ exchangeRate }) {
+export default function BookList() {
   const { currency } = useContext(CurrencyContext);
+  const { state } = useContext(Context);
   const [books, setBooks] = useState([]);
   const [bookPage, setBookPage] = useState(1);
   const [booksPerPage, setBooksPerPage] = useState(3);
-
+  const exchangeRate = state.exchangeRate;
   // fetch and render books ************************
 
   const loadBooks = async () => {

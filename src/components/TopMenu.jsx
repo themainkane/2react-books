@@ -7,18 +7,14 @@ export default function TopMenu({
   // setCurrency,
   currentPage,
   setCurrentPage,
-  exchangeRate,
-  setExchangeRate,
+  // exchangeRate,
+  // setExchangeRate,
 }) {
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!open);
   };
-
-  // const changeItem = (item) => {
-  //   setCurrentItem(item);
-  // };
 
   const changePage = (page) => {
     setCurrentPage(page);
@@ -29,10 +25,10 @@ export default function TopMenu({
       <div className="top-menu">
         <div className="top-menu__currencies">
           <CurrencySelection
-            // currency={currency}
-            // setCurrency={setCurrency}
-            exchangeRate={exchangeRate}
-            setExchangeRate={setExchangeRate}
+          // currency={currency}
+          // setCurrency={setCurrency}
+          // exchangeRate={exchangeRate}
+          // setExchangeRate={setExchangeRate}
           />
         </div>
 
