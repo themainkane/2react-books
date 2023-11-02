@@ -1,0 +1,31 @@
+.top-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: column;
+  justify-content: space-around;
+
+  a {
+    color: white;
+    margin-left: 1em;
+
+    &.link--highlighted {
+      color: gray;
+    }
+  }
+
+  &__burger-icon {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+
+    &-stripe {
+      background-color: white;
+      height: 3px;
+      border-radius: 1px;
+      margin: 0.25em;
+    }
+  }
+}
